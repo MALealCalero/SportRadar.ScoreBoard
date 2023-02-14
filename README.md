@@ -2,7 +2,7 @@
 
 ## Description
 
-- Class library in C# .NET 6.0 which implements method to support a basic scoreboard functionality. Include testing project.
+- Class library in C# .NET 6.0 which implements methods to support a basic scoreboard functionality. It includes testing project and sample console application, which uses the developed library and simulates the evolution during time of an example scoreboard.
 
 ## Methods implemented
 
@@ -21,19 +21,19 @@
 ## Testing implemented
 
 #### 1. Start: 
-1.1. Match is added to collection.
-1.2. Match starts with result 0-0.
-1.3. Start date is filled.
-1.4. Check if, when match already exists, throws an ArgumentException.
+- 1.1. Match is added to collection.
+- 1.2. Match starts with result 0-0.
+- 1.3. Start date is filled.
+- 1.4. Check if, when match already exists, throws an ArgumentException.
 
 #### 2. Finish:
-2.1. Match is removed from collection.
-2.2. Check if, when match doesn´t exists, throws a KeyNotFoundException.
+- 2.1. Match is removed from collection.
+- 2.2. Check if, when match doesn´t exists, throws a KeyNotFoundException.
 
 #### 3. Update:
-3.1. Score is properly updated, for both teams.
-3.2. Check if, when score updated is less than zero, throws an ArgumentException.
-3.3. Check if, when match doesn´t exists, throws a KeyNotFoundException.
+- 3.1. Score is properly updated, for both teams.
+- 3.2. Check if, when score updated is less than zero, throws an ArgumentException.
+- 3.3. Check if, when match doesn´t exists, throws a KeyNotFoundException.
 
 #### 4. GetOrderedSummary:
-4.1. Check if collection result is expected one, with five matches between different and different scores and start dates.
+- 4.1. Check if collection result is expected one, with five matches between different and different scores and start dates.
