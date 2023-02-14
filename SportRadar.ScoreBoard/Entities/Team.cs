@@ -1,4 +1,4 @@
-﻿namespace SportRadar.ScoreBoard
+﻿namespace SportRadar.ScoreBoard.Entities
 {
     public class Team
     {
@@ -9,6 +9,11 @@
         {
             Name = name ?? throw new ArgumentNullException();
             Score = score ?? 0;
+        }
+
+        public void UpdateScore(int score)
+        {
+            Score = score;
         }
     }
 }
